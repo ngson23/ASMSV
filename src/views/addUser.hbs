@@ -1,0 +1,33 @@
+<body class="bg-success-subtle">
+    <div class="container">
+        <div class="row col-8 col-lg-5 m-auto mt-5 p-3 border border-primary border-4 bg-light-subtle rounded-3">
+            <h2 class="rounded text-center text-white p-2 bg-primary bg-gradient">Thêm người dùng</h2>
+            <form method="get" action="addNew">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email:</label>
+                    <input type="email" name="emailRes" class="form-control" id="exampleInputEmail1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                    <input type="password" name="passRes" class="form-control" id="exampleInputPassword1" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label" for="exampleCheck1">Họ và tên:</label>
+                    <input type="text" name="nameRes" class="form-control" id="exampleCheck1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Ảnh đại diện</label>
+                    <input class="form-control" name="imgRes" type="file" id="formFile">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="col-6" href="listuser">Hủy</a>
+                    </div>
+                    <div class="col text-end">
+                        <input type="submit" class="btn btn-primary" value="Xác nhận">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

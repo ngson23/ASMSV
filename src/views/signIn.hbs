@@ -1,0 +1,37 @@
+<div class="login-card-container">
+    <div class="login-card">
+        <div class="login-card-logo">
+            <img src="https://icones.pro/wp-content/uploads/2021/04/icone-robot-android-jaune.png" alt="logo">
+        </div>
+        <div class="login-card-header">
+                <h1>Sign In</h1>
+        </div>
+        <form class="login-card-form" action="/signIn" method="get">
+            <div class="form-item">
+                <span class="material-symbols-outlined form-item-icon">mail</span>
+                <input type="email" placeholder="Enter Email" id="email" name="email"
+                autofocus required>
+            </div>
+            <div class="form-item">
+                <span class="material-symbols-outlined form-item-icon">lock</span>
+                <input type="password" placeholder="Enter Password" id="password" name="password"
+                 required>
+                </div>
+                {{#if wrong}}
+                <div class="row">
+                    <p class="text-danger">Tài khoản hoặc mật khẩu không hợp lệ!</p>
+                </div>
+                {{/if}}
+                <div class="form-item-other">
+                    <div class="checkbox">
+                        <input type="checkbox" id="remember" checked>
+                        <label for="rememberMeCheckbox">Remember me</label>
+                    </div>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <div class="login-card-footer">
+                Don't have account? <a href="/createAcc">Create account.</a>
+            </div>
+        </div>
+    </div>
