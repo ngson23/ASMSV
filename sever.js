@@ -34,7 +34,6 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 
-
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
       dir = ('./public')
@@ -62,9 +61,6 @@ var upload = multer({
 app.post('/changeImg', (req, res) => {
   res.render('upImg')
 })
-
-
-
 
 app.get('/', (req, res) => {
   res.render('signIn')
@@ -160,23 +156,6 @@ app.put('/listProduct/updateProduct/:id', (req, res, next) => {
       res.redirect('/listProduct')
   }).catch(next)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   http.createServer(function (req, res) {
   fs.readFile('./src/css/product.css', function(err, data) {
